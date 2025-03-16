@@ -16,19 +16,6 @@ help:
 	@echo "make build            - build the container image"
 	@echo ""
 
-# build:
-# 	@docker build -t kalibr -f Dockerfile_ros1_20_04 .
-
-# start:
-# 	@ xhost +local:root; \
-# 	docker run -it -e "DISPLAY" -e "QT_X11_NO_MITSHM=1" -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" -v "/home/frank/devel/kalibr/data:/data" kalibr
-
-build:
-	@docker compose build
-
-stop:
-	@docker compose down
-
 start:
 	@xhost +local:root; \
 	docker compose up -d
@@ -37,5 +24,11 @@ start-verbose:
 	@xhost +local:root; \
 	docker compose up
 
+stop:
+	@docker compose down
+
 shell:
 	@docker exec -it kalibr /bin/bash
+
+build:
+	@docker compose build
