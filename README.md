@@ -1,5 +1,5 @@
 # Camera Calibration 
-This repo streamlines the process of performing a single or multi-camera calibration using [Kalibr](https://github.com/ethz-asl/kalibr) camera calibration. To perform camera calibration following the details before.
+This repo streamlines the process of performing a single or multi-camera calibration using [Kalibr](https://github.com/ethz-asl/kalibr) camera calibration. To perform camera calibration follow the details below.
 
 **Table of Contents**
    * [1. Prerequisities](#1-prerequisities)
