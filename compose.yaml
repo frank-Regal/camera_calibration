@@ -1,0 +1,19 @@
+services:
+  kalibr:
+    image: camera_calibration/kalibr:latest
+    container_name: kalibr
+    network_mode: host
+    build:
+      context: .
+      dockerfile: kalibr/Dockerfile_ros1_20_04
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/data
+      - ./tags:/tags
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./calibrate.sh:/usr/local/bin/calibrate
+
