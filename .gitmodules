@@ -1,0 +1,3 @@
+[submodule "kalibr"]
+	path = kalibr
+	url = git@github.com:frank-Regal/kalibr.git
