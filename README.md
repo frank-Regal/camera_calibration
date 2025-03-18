@@ -93,7 +93,7 @@ This repo streamlines the process of performing a single or multi-camera calibra
    2. `--topics`   - `sensor_msgs/Image` topics in your ROS bag you want to use for calibration
    3. `--target`   - path to april grid configuration file in `tags/` directory
    4. `--models`   - the models representing your cameras
-   5. `--bag-freq` - the frequency at which your want kalibr to read your bag data (sometimes less is better)
+   5. `--bag-freq` - the frequency at which your want kalibr to read your bag data. Remove this flag if you want to use all frames in the bag (sometimes less is better)
 
 ## 5. Running
 1. Open a Docker 🐳 Shell
