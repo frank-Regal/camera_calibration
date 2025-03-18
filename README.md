@@ -78,7 +78,7 @@ This repo streamlines the process of performing a single or multi-camera calibra
          ```
   2. Print the calibration board and paste it to a completely flat surface.
          
-  3. Record a ROS bag as you move you capture the april grid all around the frame of your camera.
+  3. Record a ROS bag. As you move the camera, capture the april grid all around the frame of your camera.
    
 ## 4. Configuration
 1. Place the ROS bag you recorded in `data/` directory
